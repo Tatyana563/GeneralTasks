@@ -23,5 +23,3 @@ public class Day {
     }
 
 }
-//ldt = ldt.with(ChronoField.MONTH_OF_YEAR, 10)
-//                .with(ChronoField.DAY_OF_MONTH, 5);

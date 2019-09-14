@@ -2,7 +2,6 @@ package lesson.date;
 
 import java.time.*;
 import java.time.temporal.ChronoField;
-import java.time.temporal.TemporalField;
 import java.util.*;
 
 public class DateTest {
@@ -64,7 +63,7 @@ public class DateTest {
 
         Instant instant = Instant.now();
         System.out.println(instant);
-        System.out.println(TimeZone.getDefault());
+        //System.out.println(Zone.getDefault());
         Instant instant1 = new Date().toInstant();
 
         System.out.println(instant1);
