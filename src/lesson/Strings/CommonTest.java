@@ -11,6 +11,7 @@ public class CommonTest {
 
     public CommonTest append(String s ) {
         values.append(s);
+        //"sdsd"
         return this;
     }
 
