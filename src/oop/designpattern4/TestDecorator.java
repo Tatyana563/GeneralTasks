@@ -14,18 +14,19 @@ public class TestDecorator {
     };
         TextProcessor textProcessor = new SimpleTextProcessor("Hello world!!!");
         System.out.println(textProcessor.out());
-
-        textProcessor = new UpperCaseTextDecorator(new SimpleTextProcessor("Hello world!!!"));
+        textProcessor = new ReverseTextDecorator(new SimpleTextProcessor("apple"));
         System.out.println(textProcessor.out());
+//        textProcessor = new UpperCaseTextDecorator(new SimpleTextProcessor("Hello world!!!"));
+//        System.out.println(textProcessor.out());
 
-        textProcessor = new ReverseTextDecorator(new UpperCaseTextDecorator(new SimpleTextProcessor("Hello world!!!!")));
-        System.out.println(textProcessor.out());
+       // textProcessor = new ReverseTextDecorator(new UpperCaseTextDecorator(new SimpleTextProcessor("Hello world!!!!")));
+      //  System.out.println(textProcessor.out());
 
-        textProcessor = new KOI8RTextDecorator(new UpperCaseTextDecorator(new SimpleTextProcessor("Привет")));
-        System.out.println(textProcessor.out());
-
-        textProcessor = new GreenTextDecorator(new UpperCaseTextDecorator(new SimpleTextProcessor("Привет")));
-        System.out.println(textProcessor.out());
+//        textProcessor = new KOI8RTextDecorator(new UpperCaseTextDecorator(new SimpleTextProcessor("Привет")));
+//        System.out.println(textProcessor.out());
+//
+//        textProcessor = new GreenTextDecorator(new UpperCaseTextDecorator(new SimpleTextProcessor("Привет")));
+//        System.out.println(textProcessor.out());
 
 
     }

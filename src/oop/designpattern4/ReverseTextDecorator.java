@@ -6,6 +6,8 @@ public class ReverseTextDecorator extends TextDecorator {
         super(textProcessor);
     }
 
+
+
     @Override
     public String out() {
 
@@ -14,8 +16,8 @@ public class ReverseTextDecorator extends TextDecorator {
         for (int i = str.length()-1; i >=0; i--) {
             str2 = str2 + str.charAt(i);
         }*/
-
-        return new StringBuilder(str).reverse().toString();
+        System.out.println(str+"ggg");
+       return new StringBuilder(str).reverse().toString();
 
     }
 }

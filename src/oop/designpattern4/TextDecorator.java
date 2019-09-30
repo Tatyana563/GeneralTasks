@@ -9,7 +9,7 @@ public abstract class TextDecorator implements TextProcessor {
         this.textProcessor = textProcessor;
     }
 
-    @Override
+       @Override
     public String out() {
         return textProcessor.out();
     }
