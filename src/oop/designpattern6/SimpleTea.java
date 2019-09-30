@@ -9,7 +9,7 @@ public class SimpleTea implements Tea {
 
     @Override
     public int price() {
-        System.out.println("Price: simple tea");
+        System.out.println("Price: simple tea is "+teaPrice);
         return teaPrice;
     }
 }
