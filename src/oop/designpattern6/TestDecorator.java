@@ -6,7 +6,9 @@ public class TestDecorator {
        myTea.price();
 
      //   myTea = new MilkTeaDecorator(new SimpleTea(25),10);
-        myTea = new JasmineTeaDecorator(new SimpleTea(20));
+       myTea = new JasmineTeaDecorator(new SimpleTea(20));
+       myTea.price();
+       myTea = new MilkTeaDecorator(new SimpleTea(20),20);
        myTea.price();
     }
 }

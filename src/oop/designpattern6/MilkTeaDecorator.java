@@ -1,16 +1,17 @@
 package oop.designpattern6;
 
-public class MilkTeaDecorator extends SimpleTea {
+public class MilkTeaDecorator extends TeaDecorator {
    private final int milkPrice;
 
-    public MilkTeaDecorator(int teaPrice, int milkPrice) {
-        super(teaPrice);
+    public MilkTeaDecorator(Tea tea, int milkPrice) {
+        super(tea);
         this.milkPrice = milkPrice;
     }
 
     @Override
     public int price() {
-        System.out.println("Price: tea with milk");
-        return super.price()+milkPrice;
+        int price=super.price()+milkPrice;
+        System.out.println("Price: tea with milk "+price);
+        return price;
     }
 }
