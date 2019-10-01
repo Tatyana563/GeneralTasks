@@ -10,7 +10,7 @@ public class TestCalculator {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         calculator.setStrategy(new DivideStrategy());
-        calculator.calculate(2, 2);
+        calculator.calculate(4,2);
         calculator.setStrategy(new AddStrategy());
         calculator.calculate(2, 2);
 

@@ -1,7 +1,7 @@
 package oop.designpattern5;
 
 public class Calculator {
-
+//aggregation, class Calculator doesn't control lifecycle of strategy;
     private Strategy strategy;
 
     /*public Calculator() {
