@@ -4,6 +4,14 @@ import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
+//Что сделает аннотация  @Data?
+//Она на этапе компиляции сгенерирует геттеры\сеттеры для всех полей,
+// toString и переопределит equals и hashCode по стандартам
+//Можно отдельно -
+//@Getter/@Setter
+//@ToString
+//@EqualsAndHashCode
+//@NoArgsConstructor, @RequiredArgsConstructor and @AllArgsConstructor
 
 @Data
 @Builder
