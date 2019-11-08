@@ -41,4 +41,5 @@ CityType type;
                 ", type=" + type +
                 '}';
     }
+
 }
